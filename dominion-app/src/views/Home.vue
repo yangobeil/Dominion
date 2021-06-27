@@ -153,6 +153,12 @@ export default {
       return sum
     }
   },
+  mounted: function() {
+    axios
+      .get(process.env.VUE_APP_API_URL + 'wakeup')
+      .then(response => (console.log(response.data)))
+      .catch(console.error)
+  },
   methods: {
     getRandomCards() {
       var parameters

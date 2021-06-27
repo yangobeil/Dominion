@@ -83,5 +83,10 @@ def suggestions():
     return jsonify(suggestions)
 
 
+@app.route('/wakeup', methods=['GET'])
+def wakeup():
+    return jsonify('Hello there')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
