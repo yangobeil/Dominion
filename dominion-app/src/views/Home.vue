@@ -13,7 +13,7 @@
                 <v-col cols=12 md="6">
                   <p>Sélectionner les extensions au hasard si désiré: </p>
                 </v-col>
-                <v-col cols=2>
+                <v-col cols=6 md="2">
                   <v-text-field outlined dense :rules="rules" v-model.number="numRandom"></v-text-field>
                 </v-col>
                 <v-col>
