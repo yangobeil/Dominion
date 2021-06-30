@@ -10,7 +10,7 @@
           <v-card class="pa-4 ma-4">
             <v-form ref="form">
               <v-row>
-                <v-col cols=6>
+                <v-col cols=12 md="6">
                   <p>Sélectionner les extensions au hasard si désiré: </p>
                 </v-col>
                 <v-col cols=2>
@@ -22,7 +22,7 @@
               </v-row>
             </v-form>
             <v-row>
-              <v-col v-for="ext in extensionsList" :key="ext.name" cols="6" md="3" lg="3" xl="3">
+              <v-col v-for="ext in extensionsList" :key="ext.name" cols="12" md="4">
                 <v-checkbox v-model="extensions" :label="`${ext.name} (${ext.description})`" :value="ext.name" class="pa-0 ma-0"></v-checkbox>
               </v-col>
             </v-row>
@@ -43,7 +43,7 @@
             </v-radio-group>
             <v-container v-if="selection == 'select'">
               <v-row>
-                <v-col v-for="ext in extensions" :key="ext" cols="3">
+                <v-col v-for="ext in extensions" :key="ext" cols="12" md="3">
                   <v-text-field v-model.number="cardsDistribution[ext]" :label="ext"></v-text-field>
                 </v-col>
               </v-row>
