@@ -122,7 +122,8 @@ export default {
         { name: "L'Arrière-pays", description: "Effet à l'achat" },
         { name: "Abondance", description: "Variété" },
         { name: "Alchimie", description: "Potions" },
-        { name: "Prospérité", description: "Argent" }
+        { name: "Prospérité", description: "Argent" },
+        { name: "Guildes", description: "Coût variable" }
       ],
       rules: [
         value => [1,2,3,4,5,6,7,8].includes(value) || 'Nombre entier entre 1 et 8'
